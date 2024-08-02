@@ -7,7 +7,7 @@ def generate_questions(paragraph):
         if not paragraph or not isinstance(paragraph, str):
             raise ValueError("Invalid input: The paragraph must be a non-empty string.")
 
-        prompt = f"Generate questions related to the content in the paragraph, they should not be MCQs; they should be more specifically interview questions\n\n{paragraph}"
+        prompt = f"Generate questions related to the content in the paragraph, they should not be MCQs; they should be more specifically interview questions and also programatic questions\n\n{paragraph}"
 
         chat_completion = client.chat.completions.create(
             messages=[
