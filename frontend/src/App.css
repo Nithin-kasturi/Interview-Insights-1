@@ -1,61 +1,167 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: cursive;
-    background-color: black;
-}
-.heading{
-    color: #F96167;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    padding: 10px;
-}
-.input{
-    width: 1000px;
-    height: 50px;
-    /* margin-top: 10px; */
-    margin-left: 100px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
+/* src/App.css */
+
+.App {
     text-align: center;
-    font-size: x-large;
-    color: #F96167;
-    border-color: white;
-}
-.container{
-    border-radius: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+  
+  .App-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .App-logo {
+    border-radius: 50%;
+    height: 70px;
+    margin-right: 20px;
+  }
+  
+  .App-form {
+    margin-bottom: 20px;
+  }
+  
+  .App-input {
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    width: 300px;
+    font-size: 16px;
+  }
+  
+  .App-submitBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
     color: white;
-    background-color: black;
-    margin: 10px;
-}
-.link{
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .App-submitBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  .App-loader {
+    margin: 20px 0;
+  }
+  
+  .App-error {
+    color: #dc3545;
+  }
+  
+  .App-role {
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  
+  .App-container {
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+  }
+  
+  .App-cards {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 20px;
-}
-.submitBtn{
-    background-color: white;
-    height: 50px;
-    font-size: x-large;
-    padding: 8px;
-    
-}
-.loader{
-    margin-top: 20px;
-    display: flex;
     justify-content: center;
+    overflow: hidden;
+  }
+  
+  .App-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    transition: all 0.3s ease;
+    text-align: left;
+    flex-shrink: 0;
+  }
+  
+  .App-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .App-cardHeader {
+    display: flex;
     align-items: center;
-}
-.line{
-    height: 4px;
-    background-color: white;
-    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .App-cardTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    color: #007bff;
+  }
+  
+  .App-cardLink {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 15px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  .App-cardLink:hover {
+    text-decoration: underline;
+  }
+  
+  .App-questionsList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .App-questionItem {
     margin-bottom: 10px;
-}
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .App-navButton {
+    position: fixed;
+    top: 50%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .App-navButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .App-navButton-left {
+    left: 10px;
+  }
+  
+  .App-navButton-right {
+    right: 10px;
+  }
+  
