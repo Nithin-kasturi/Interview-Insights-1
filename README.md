@@ -9,7 +9,7 @@ Certainly! Here’s a refined description based on your requirements:
 
 **Objective:** Develop a web application that streamlines job interview preparation by leveraging advanced technologies to provide valuable insights based on user inputs. 
 
-**Description:**
+**Description :**
 
 The Interview Insights application offers an efficient way for job seekers to gather relevant information about job interviews. Here’s how it works:
 
